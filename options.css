@@ -1,0 +1,110 @@
+* {
+  font-family: 'Comic Sans MS', 'fantasy';
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('background.svg');
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: -20px 20px 0 0 #6867aa;
+}
+
+h1 {
+  color: #444;
+  margin: 0;
+  font-size: 52px;
+  z-index: 2;
+}
+
+h1 span {
+  color: #6867aa;
+}
+
+h1 img {
+  width: 52px;
+  height: 52px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  h1 img:hover {
+    animation-name: wiggle;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes wiggle {
+    from {
+      transform: rotate(-10deg)
+    }
+    to {
+      transform: rotate(10deg);
+    }
+  }
+}
+
+form {
+  font-size: 22px;
+  z-index: 2;
+}
+
+fieldset {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr) 20px repeat(2, 1fr) 20px repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 
+    "legend legend legend legend legend legend legend legend"
+    "button1 label1 . button2 label2 . button3 label3";
+  border: 8px dotted #6867aa;
+}
+
+legend {
+  grid-area: legend;
+}
+
+input:nth-of-type(1) {
+  grid-area: button1;
+}
+
+label:nth-of-type(1) {
+  grid-area: label1;
+}
+
+input:nth-of-type(2) {
+  grid-area: button2;
+}
+
+label:nth-of-type(2) {
+  grid-area: label2;
+}
+
+input:nth-of-type(3) {
+  grid-area: button3;
+}
+
+label:nth-of-type(3) {
+  grid-area: label3;
+}

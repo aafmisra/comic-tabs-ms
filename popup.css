@@ -1,0 +1,12 @@
+p {
+  font-family: 'Comic Sans MS', 'fantasy';
+  margin: 20px 10px;
+  padding: 10px 20px;
+  border: 4px dotted #6867aa;
+  font-size: 20px;
+}
+
+body {
+  width: max-content;
+  height: max-content;
+}

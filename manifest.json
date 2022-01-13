@@ -1,0 +1,25 @@
+{
+  "name": "Comic Tabs MS",
+  "description": "Changes your active tab font to Comic Sans if you have too many tabs open.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "action": {
+    "default_icon": {
+      "16": "clown-face-16x16.png",
+      "32": "clown-face-32x32.png",
+      "48": "clown-face-48x48.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "clown-face-16x16.png",
+    "32": "clown-face-32x32.png",
+    "48": "clown-face-48x48.png"
+  },
+  "options_page": "options.html"
+}
