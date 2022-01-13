@@ -34,7 +34,6 @@ h1 {
   color: #444;
   margin: 0;
   font-size: 52px;
-  z-index: 2;
 }
 
 h1 span {
@@ -66,7 +65,6 @@ h1 img {
 
 form {
   font-size: 22px;
-  z-index: 2;
 }
 
 fieldset {
@@ -107,4 +105,22 @@ input:nth-of-type(3) {
 
 label:nth-of-type(3) {
   grid-area: label3;
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+footer p {
+  color: #fff;
+  margin-left: 20px;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration-style: dotted;
 }
