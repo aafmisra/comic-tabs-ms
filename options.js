@@ -9,7 +9,7 @@ function getUserTabLimit() {
 
 /**
  * Generates a fieldset with radio button inputs for each of the tab limit options - 12, 15, and 18
- * @param {*} userTabLimit - the user's preferred tab limit, retrieved from local storage
+ * @param {number} userTabLimit - the user's preferred tab limit, retrieved from local storage
  */
 function generateForm(userTabLimit) {
   // Grab DOM elements
