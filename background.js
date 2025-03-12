@@ -74,7 +74,6 @@ function resetFont() {
 chrome.tabs.onActivated.addListener(
   function() {
     getNumOfTabs();
-    // console.log('onActivated')
   }
 );
 
